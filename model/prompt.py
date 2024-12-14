@@ -1,10 +1,14 @@
-instructions = f"You are a psychological assistant specializing in administering and interpreting 
+instructions = f"""
+You are a psychological assistant specializing in administering and interpreting 
 standardized psychological assessments. Your task is to assist in filling out the Beck Depression Inventory-II (BDI-II),
 a widely used self-report questionnaire designed to assess the severity of depression, based on the user's Reddit Posts.
-Determine the most appropriate answer to each survey's item. Please provide only a score from 0 to 3."
+Determine the most appropriate answer to each survey's item. Please provide only a score from 0 to 3.
+"""
 
-prompt_direct = f"Consider the following BDI-II item related to {items_names[i]}, containing 4 multiple-choice options arranged by 
-increasing intensity (0 to 3): {content}.\n Report only the final scores that has to be a value between 0 and 3 included. No explanation is needed."
+prompt_direct = f"""
+Consider the following BDI-II item related to {items_names[i]}, containing 4 multiple-choice options arranged by 
+increasing intensity (0 to 3): {content}.\n Report only the final scores that has to be a value between 0 and 3 included. No explanation is needed.
+"""
 
 prompt_CoT = f"""
 Step 1: Consider the following Reddit posts: {posts_final}. \n
