@@ -14,7 +14,6 @@ from scipy.spatial import distance
 
 from sentence_transformers import SentenceTransformer, util
 import random
-import xml.etree.ElementTree as ET
 
 import anthropic
 import openai
