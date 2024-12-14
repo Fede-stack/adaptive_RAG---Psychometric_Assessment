@@ -1,7 +1,7 @@
 import gc 
 from tqdm import tqdm
 
-def train_zeroshot(cosine, type_embs):
+def train(cosine, type_embs):
     predictions_tot_gpt = []
     error_indices = [] 
     for j in tqdm(range(len(docss)), desc="Processing Users"):
