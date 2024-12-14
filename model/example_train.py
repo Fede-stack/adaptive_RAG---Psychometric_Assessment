@@ -24,6 +24,8 @@ import torch
 import os
 import json
 
+set_seed(42)
+
 model = SentenceTransformer('sentence-transformers/msmarco-MiniLM-L6-cos-v5')
 
 def get_embedding(text, model):
