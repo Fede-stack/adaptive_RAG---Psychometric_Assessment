@@ -6,8 +6,9 @@ Determine the most appropriate answer to each survey's item. Please provide only
 """
 
 prompt_direct = f"""
-Consider the following BDI-II item related to {items_names[i]}, containing 4 multiple-choice options arranged by 
-increasing intensity (0 to 3): {content}.\n Report only the final scores that has to be a value between 0 and 3 included. No explanation is needed.
+Consider the following Reddit post: {posts_final}. 
+These posts are the most relevant posts from the user according to the item: {items_names[i]}. 
+Which of the following choices do you think is the most appropriate response: {content}.\n\nReport only the final score single score, only one value between 0 and 3 included based on the intensity of {bdi_items[i]}.
 """
 
 prompt_CoT = f"""
