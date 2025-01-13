@@ -12,10 +12,10 @@ Which of the following choices do you think is the most appropriate response: {c
 """
 
 prompt_CoT = f"""
-Step 1: Consider the following Reddit posts: {posts_final}. \n
-Step 2: Identify which posts are the most relevant for answering a question related to {items_names[i]}."
-Step 3: Based on the relevant Reddit posts, choose which of the following choices seems most appropriate as a response: {content}. Why does this choice stand out 
-as the best match given the user's current psychological state? Explain the reasoning behind this choice step by step. \n
-Step 4: Finally, report the final score (0-3) based on the intensity of {content}. Use the reasoning from the previous steps to justify your scoring. \n\n
+Step 1: Consider the following Reddit posts: {REDDIT POSTS}. \n
+Step 2: Identify which posts are the most relevant for answering a question related to {ITEM NAME}."
+Step 3: Based on the relevant Reddit posts, choose which of the following choices seems most appropriate as a response: {CHOICES}. Why does this choice stand out 
+as the best match given the user's current psychological state? Think about the reasoning behind this choice step by step. \n
+Step 4: Finally, report the final score (0-3) based on the intensity of {CHOICES}. Use the reasoning from the previous steps to evaluate your scoring. \n
 Output format: Provide only a single value (0-3) without explanation.
 """
